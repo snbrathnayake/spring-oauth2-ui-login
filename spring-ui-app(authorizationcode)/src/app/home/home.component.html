@@ -1,0 +1,10 @@
+<div style="margin-top: 20px;" >
+  <button *ngIf="!isLoggedIn" class="btn btn-primary" (click)="login()" type="submit">Login</button>
+  <div *ngIf="isLoggedIn" class="content">
+      <span>Welcome !!</span>
+      <a class="btn btn-danger btn-sm pull-right"(click)="logout()" routerLink="/">Logout</a>
+      <br/>
+      <hr/>
+      <app-view-infor></app-view-infor>
+  </div>
+</div>
